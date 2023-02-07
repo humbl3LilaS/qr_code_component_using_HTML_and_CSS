@@ -1,0 +1,83 @@
+/*font import : font-family: 'outfit', sans-serif; Weight: 400, 700*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --bg-light-grey: hsl(212, 45%, 89%);
+  --bg-grayish-blue: hsl(220, 15%, 55%);
+  --color-drak-blue: hsl(218, 44%, 22%);
+  --bd-radius: 2rem;
+  --mb-default: 2rem;
+  --text-padding: 1rem;
+}
+
+
+body {
+  box-sizing: border-box;
+  font-family: "outfit", sans-serif;
+  background-color: var(--bg-light-grey);
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.card-container {
+  margin: 25vh auto 0;
+
+
+  max-width: 35rem;
+
+
+  padding: 2rem;
+  border-radius: var(--bd-radius);
+  background-color: var(--color-white);
+}
+
+.img-qr {
+  width: 100%;
+  margin-bottom: var(--mb-default);
+  border-radius: calc(var(--bd-radius) * 0.75);
+}
+
+.heading-primary {
+  padding: 0 var(--text-padding);
+  margin-bottom: var(--mb-default);
+
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.info {
+  padding: 0 var(--text-padding);
+  margin-bottom: var(--mb-default);
+
+  color: var(--bg-grayish-blue);
+  font-size: 1.5rem;
+  text-align: center;
+  text-indent: 1rem;
+  word-spacing: 4px;
+}
+
+.attribution{
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+}
+
+.attribution > a {
+  text-decoration: none;
+  color: var(--bg-grayish-blue);
+  cursor: pointer;
+}
+
